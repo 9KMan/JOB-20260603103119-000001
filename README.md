@@ -13,7 +13,27 @@ A full-stack inventory management system built with FastAPI, PostgreSQL, and a r
 
 ## Business Problem Solved
 
-[filled from SPEC.md §1 — describe the business problem this solves, who benefits, and why it matters]
+Warehouses and operations teams lose thousands per year due to manual inventory tracking errors, stock discrepancies, and blind spots in supply chain visibility. A retail or logistics business managing inventory by spreadsheet or intuition cannot scale reliably — items go missing, orders ship incomplete, and reorder points get guessed rather than calculated.
+
+**Who this solves it for:**
+- Warehouse managers who need real-time stock visibility across locations
+- Operations teams tracking RFID-tagged assets as they move through receiving, storage, and fulfillment
+- Small-to-medium businesses replacing manual counts with automated audit trails
+
+**What you get:**
+- Accurate, real-time inventory records — every ADD, REMOVE, ADJUST, or AUDIT operation is logged with timestamp, user, and notes
+- RFID-enabled tracking so physical items map directly to digital records
+- Soft-delete safety net: nothing is permanently lost, records can be recovered
+- Fast audit: inspectors can run an AUDIT operation and immediately see discrepancies against expected quantities
+- SKU uniqueness enforcement prevents duplicate items from entering the system
+
+**Technical delivery:**
+- REST API (FastAPI) with JWT-authenticated endpoints — auditors, managers, and systems all have controlled access
+- PostgreSQL backend with proper indexes on foreign keys and high-cardinality columns for fast queries at scale
+- Responsive SPA frontend so teams can manage inventory from desktop or mobile
+- Docker Compose for one-command local dev and production deployment
+
+This system turns inventory from guesswork into a verifiable, auditable process.
 ## Tech Stack
 
 - **Backend**: FastAPI, SQLAlchemy, PostgreSQL
