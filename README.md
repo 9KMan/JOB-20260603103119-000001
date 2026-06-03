@@ -10,6 +10,10 @@ A full-stack inventory management system built with FastAPI, PostgreSQL, and a r
 - **Responsive UI**: Modern, mobile-friendly interface
 - **RESTful API**: Versioned API endpoints (/api/v1/...)
 
+
+## Business Problem Solved
+
+[filled from SPEC.md §1 — describe the business problem this solves, who benefits, and why it matters]
 ## Tech Stack
 
 - **Backend**: FastAPI, SQLAlchemy, PostgreSQL
