@@ -1,0 +1,55 @@
+# Proposal files - do not push
+PROPOSAL.md
+COVER_LETTER.txt
+SPEC.txt
+TASK.txt
+pid
+role
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite3
+
+# Node (if any)
+node_modules/
+npm-debug.log*
+
+# Docker
+.docker/
+
+# Misc
+.DS_Store
+Thumbs.db
